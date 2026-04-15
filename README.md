@@ -1,4 +1,4 @@
-# 🎯 FocusTracker
+# FocusTracker
 
 ## Two‑Line Description
 
@@ -7,7 +7,7 @@ It calculates a **Focus Score** using your productivity time vs total time and v
 
 ---
 
-# 🚀 FocusTracker — Stay Productive, Stay Focused
+# FocusTracker — Stay Productive, Stay Focused
 
 FocusTracker is a productivity‑focused Chrome extension that tracks your browsing behavior across websites, categorizes them into **productive** or **distractive**, and generates a **Focus Score** to help you improve your daily efficiency.
 
@@ -15,19 +15,31 @@ Whether you're studying, working, or trying to reduce distractions, FocusTracker
 
 ---
 
-# ✨ Features
+# Features
 
 * 📊 Track time spent across multiple websites
-* 🧠 Categorize websites into **Productive** and **Distractive**
+* 🧠 Categorize websites into **Productive**, **Distractive**, and **Neutral**
+* ⏱️ Rechecks browsing activity every **2 seconds**
+* 🪟 Detects websites even when opened but not actively used
 * 🎯 Focus Score calculation
 * 📈 Visual analytics dashboard using charts
 * ⚡ Fast backend using FastAPI
 * 🎨 Clean UI with Bootstrap & Chart.js
-* 🔄 Real‑time tracking and updates
+* 🔄 Real-time tracking and updates
 
 ---
 
-# 🧮 Focus Score Logic
+# 🎯 Focus Score Categories
+
+| Focus Score | Category             | Meaning                |
+| ----------- | -------------------- | ---------------------- |
+| 0 — 39      | Require Improvement  | High distraction level |
+| 40 — 69     | Average Focus Person | Moderate productivity  |
+| 70 — 100    | High Focus Power     | Highly productive      |
+
+---
+
+# Focus Score Logic
 
 ```
 focus_score = (productivity_time / total_time) * 100
@@ -45,7 +57,7 @@ Focus Score = **60%**
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 ### Backend
 
@@ -72,7 +84,7 @@ Focus Score = **60%**
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```
 FocusTracker/
@@ -103,7 +115,22 @@ FocusTracker/
 
 ---
 
-# ⚙️ Installation Guide
+# 💻 System Requirements
+
+### Minimum Requirements
+
+* Python **3.14** (Recommended) or **3.8+**
+* Google Chrome (Latest Version)
+* Chrome Developer Mode Enabled
+* Minimum **512 MB RAM**
+* At least **50 MB Disk Space**
+* Localhost Network Configuration (No WiFi Required)
+* Routing Activation Enabled
+* Chrome Extension **Manifest V3** Configuration
+
+---
+
+# Installation Guide
 
 ## 1. Clone the Repository
 
@@ -144,7 +171,7 @@ pip install fastapi uvicorn sqlalchemy pydantic python-multipart
 
 ---
 
-# ▶️ Run the Backend Server
+# Run the Backend Server
 
 ```
 uvicorn main:app --reload
@@ -158,7 +185,7 @@ http://127.0.0.1:8000
 
 ---
 
-# 🧩 Load Chrome Extension
+# Load Chrome Extension
 
 1. Open Google Chrome
 2. Go to
@@ -173,7 +200,7 @@ chrome://extensions/
 
 ---
 
-# 📊 Dashboard Features
+# Dashboard Features
 
 * Daily Focus Score
 * Productive vs Distractive Chart
@@ -182,7 +209,7 @@ chrome://extensions/
 
 ---
 
-# 🎯 Use Cases
+# Use Cases
 
 * Students preparing for exams
 * Developers tracking coding time
@@ -191,7 +218,7 @@ chrome://extensions/
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 * AI‑based website classification
 * Weekly & Monthly reports
@@ -201,7 +228,7 @@ chrome://extensions/
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 Contributions are welcome!
 
@@ -213,19 +240,19 @@ Contributions are welcome!
 
 ---
 
-# ⭐ Support
+# Support
 
 If you found this project helpful, please consider giving it a **star ⭐**
 
 ---
 
-# 📬 Contact
+# Contact
 
 For suggestions or feedback, feel free to open an issue.
 
 ---
 
-# 🏁 Final Note
+# Final Note
 
 FocusTracker helps you **understand where your time goes**, so you can take control of your productivity and stay focused every day.
 
